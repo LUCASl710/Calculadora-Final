@@ -47,6 +47,7 @@ function calculate(){
         break;
         case"-":
         result = prev - current;
+        break;
         case "*":
         result = prev * current;
         case "/":
@@ -97,7 +98,7 @@ numberButtons.forEach(button=>{
     });
 });
 
-operadorButtons.forEach(button =>{
+operatorButtons.forEach(button =>{
     button.addEventListener("click",() =>{
         chooseOperator(button.dataset.operator);
         updateDisplay();
@@ -110,3 +111,7 @@ equalsButton.addEventListener("click", () => {
 });
 
 clearButton.addEventListener("click", clear);
+
+
+console.log(equalsButton)
+console.log(clearButton)
