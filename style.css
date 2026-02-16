@@ -24,6 +24,8 @@ body {
     border-radius: 8px;
     width: 300px;
 }
+
+/*contenedor para el resultado*/
 .display {
     background: #5f0b0b;
     color: white;
@@ -37,22 +39,24 @@ body {
     justify-content: center;
 }
 
+/*numero actual*/
 #previous-operand {
 font-size: 0.8rem;
 opacity: 0.7;
 }
-
+/*numero anterior*/
 #current-operand{
     font-size: 1.5rem;
 }
 
-
+/*Reacomodo de botones con css grid*/
 .buttons{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
 }
 
+/*forma de los botones el color y demas*/
 button{
     padding: 15px;
     font-size: 1rem;
